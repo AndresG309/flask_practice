@@ -1,0 +1,73 @@
+# Flask Web Application .gitignore
+
+# Flask instance and config
+instance/
+config.py
+config_local.py
+
+# Static files (generated)
+/static/dist/
+/static/build/
+/static/compiled/
+
+# Upload directories
+/uploads/
+/media/
+/user_uploads/
+
+# Templates cache
+.webassets-cache
+
+# Environment
+.env
+.env.local
+.flaskenv
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Database & Migration
+*.db
+*.sqlite3
+migrations/versions/*.py
+!migrations/versions/__init__.py
+
+# Session files
+flask_session/
+sessions/
+
+# Logs and debugging
+*.log
+app.log
+debug.log
+error.log
+
+# Frontend build tools
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Webpack/Parcel builds
+.cache/
+.parcel-cache/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+test_results/
+
+# Celery (background tasks)
+celerybeat-schedule
+celerybeat.pid
+
+# Redis dumps
+dump.rdb
